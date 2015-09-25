@@ -1,0 +1,3 @@
+[submodule "Default-Gulp-Configuration"]
+	path = Default-Gulp-Configuration
+	url = https://github.com/DrewDouglass/Default-Gulp-Configuration

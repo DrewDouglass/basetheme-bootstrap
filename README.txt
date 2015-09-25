@@ -10,6 +10,7 @@ Version 1.9.3
 - Removed styles already added by Bootstrap or not used.
 - Added CSS media queries to match Bootstraps breakpoints.
 - Added walker nav.
+- Added default Gulp/PostCSS configuration.
 
 Version 1.9.2
 - TGM_Plugin_Activation update
