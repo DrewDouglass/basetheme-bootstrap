@@ -1,5 +1,9 @@
 WordPress theme files to build from. Originally based on HTML5 Boilerplate, Boilerplate base theme, Starker's base theme, and others.
 
+Version 1.9.3
+- Added social sharing functions and social profile URL functions.
+- Added .gitignore
+
 Version 1.9.2
 - TGM_Plugin_Activation update
 

@@ -307,6 +307,60 @@ function debug_display($var, $admins=true, $title="", $echo_to_screen = true, $u
       return $output;
 }
 
+if(!function_exists('get_sharing_link')) {
+	function get_sharing_link($network) {
+		if($network) {
+			switch($network) {
+			
+				case 'facebook':
+					return 'http://www.facebook.com/sharer/sharer.php?u='.get_the_permalink().'&title='.urlencode(get_the_title());
+					break;
+				
+				case 'twitter':
+					return 'http://twitter.com/intent/tweet?status='.urlencode(get_the_title()).'+'.get_the_permalink();
+					break;
+					
+				case 'linkedin':
+					return 'http://www.linkedin.com/shareArticle?mini=true&url='.get_the_permalink().'&title='.urlencode(get_the_title()).'&source='.get_site_url();
+					break;
+				
+				default:
+					return false;	
+			}
+		}
+		else {
+			return 'Must pass $network variable to function';
+		}
+	}
+}
+/****
+	* Called within an href tag. Grabs a custom ACF field from an options page.
+	* network should be all lowercase and appended with '_url'
+	*
+	* $network - str; 'twitter', 'facebook', 'linkedin'.
+	* $html - bool; defaults to false; if set to true, return href tag with network.
+	*
+	* Example: <a href="<?php echo get_social_url('twitter');?>">Follow us on Twitter</a>
+	*
+	*/
+if(!function_exists('get_social_url')) {
+	function get_social_url($network, $html=false) {
+		
+		if($network) {
+			$url = get_field($network, 'option');
+			if($html) {
+				$content = "<a href='".$url."'></a>";
+			}
+			else {
+				$content = $url;
+			}
+			return $content;
+		}
+		else {
+			trigger_error('Must provide social network type', E_USER_ERROR);
+		}
+	}
+}
 
 /* 
 Admin 
