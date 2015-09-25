@@ -8,12 +8,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
 	
-	<?php /* Use http://realfavicongenerator.net or similar to generate favicon code and replace this. */ ?>
-	<link rel="shortcut icon" href="<?php echo site_url(); ?>/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="<?php echo site_url(); ?>/favicon.png" type="image/x-icon">
-	<link rel="icon" type="image/png" href="<?php echo site_url(); ?>/favicon.png">
+	<!-- Bootstrap it -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/bootstrap.min.css">
+	<script src="<?php echo get_template_directory_uri();?>/js/vendor/bootstrap.min.js"></script>
 		
 	<?php wp_head(); ?>
 	
@@ -26,13 +24,36 @@
 <body <?php body_class(); ?>>
 <div id="wrapper">
 	<header id="header" class="clearfix">
-		<div class="row">
-			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="Home" id="logo"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a>
-			<nav id="main-nav-container" class="nav-container">
-				 <?php wp_nav_menu( array( "theme_location" => "mainnav", "container" => false, "menu_id" => "main-nav" ) ); ?> 
-			</nav>
-			<div id="mobmenu">
-				<a href="#main-nav"><span>Menu</span></a>
-			</div>
-		</div>
+		<!-- Begin Navigation -->
+		<nav class="navbar navbar-default col-md-7 col-md-offset-5" role="navigation">
+			
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="main-nav">
+			     <?php
+				 	//FB and Twitter are appended in functions.php
+					$args = array(
+						'theme_location' => 'mainnav',
+						'depth'		 => 0,
+						'container'	 => false,
+						'menu_class'	 => 'clearfix',//nav navbar-nav
+						'walker'	 => new BootstrapNavMenuWalker()
+					);
+	
+					wp_nav_menu($args);
+		
+				?>
+			    </div><!-- /.navbar-collapse -->
+			    
+		</nav>
+		<!-- End Navigation -->
 	</header>

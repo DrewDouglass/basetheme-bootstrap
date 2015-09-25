@@ -3,6 +3,13 @@ WordPress theme files to build from. Originally based on HTML5 Boilerplate, Boil
 Version 1.9.3
 - Added social sharing functions and social profile URL functions.
 - Added .gitignore
+- Added bootstrap styles and JS.
+- Removed favicon tags as these can now be added via WordPress customizer.
+- Removed markup I don't use.
+- Updated style.css info.
+- Removed styles already added by Bootstrap or not used.
+- Added CSS media queries to match Bootstraps breakpoints.
+- Added walker nav.
 
 Version 1.9.2
 - TGM_Plugin_Activation update
