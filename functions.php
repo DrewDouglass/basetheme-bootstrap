@@ -339,17 +339,19 @@ if(!function_exists('get_sharing_link')) {
 	*
 	* $network - str; 'twitter', 'facebook', 'linkedin'.
 	* $html - bool; defaults to false; if set to true, return href tag with network.
+	* $text - str; If $html is true, you should provide text for the link.
 	*
 	* Example: <a href="<?php echo get_social_url('twitter');?>">Follow us on Twitter</a>
+	* OR: <?php echo get_social_url('twitter', true, 'Follow me');?>
 	*
 	*/
 if(!function_exists('get_social_url')) {
-	function get_social_url($network, $html=false) {
+	function get_social_url($network, $html=false, $text='') {
 		
 		if($network) {
-			$url = get_field($network, 'option');
+			$url = get_field($network.'_url', 'option');
 			if($html) {
-				$content = "<a href='".$url."'></a>";
+				$content = "<a href='".$url."'>$text</a>";
 			}
 			else {
 				$content = $url;
