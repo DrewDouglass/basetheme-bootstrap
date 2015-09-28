@@ -11,7 +11,6 @@
 	
 	<!-- Bootstrap it -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/bootstrap.min.css">
-	<script src="<?php echo get_template_directory_uri();?>/js/vendor/bootstrap.min.js"></script>
 		
 	<?php wp_head(); ?>
 	
