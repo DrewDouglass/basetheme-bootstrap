@@ -3,6 +3,8 @@ WordPress theme files to build from. Originally based on HTML5 Boilerplate, Boil
 Version 1.9.4
 - Removed offset and width from header nav.
 - Moved bootstrap.js to footer.
+- Added function to create general theme options page if ACF is installed.
+- Added Intuitive Custom Post Order to list of recommended plugins.
 
 Version 1.9.3
 - Added social sharing functions and social profile URL functions.

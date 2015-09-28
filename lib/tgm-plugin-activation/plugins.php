@@ -93,6 +93,11 @@ function my_theme_register_required_plugins() {
 			'name' 		=> 'Remove XMLRPC Pingback Ping',
 			'slug' 		=> 'remove-xmlrpc-pingback-ping',
 			'required' 	=> false
+		),
+		array(
+			'name'		=> 'Intuitive Custom Post Order'
+			'slug'		=> 'intuitive-custom-post-order',
+			'required'	=> false
 		)
 	);
 
