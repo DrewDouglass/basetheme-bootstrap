@@ -95,7 +95,7 @@ function my_theme_register_required_plugins() {
 			'required' 	=> false
 		),
 		array(
-			'name'		=> 'Intuitive Custom Post Order'
+			'name'		=> 'Intuitive Custom Post Order',
 			'slug'		=> 'intuitive-custom-post-order',
 			'required'	=> false
 		)
