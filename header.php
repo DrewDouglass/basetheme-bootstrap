@@ -25,7 +25,7 @@
 <div id="wrapper">
 	<header id="header" class="clearfix">
 		<!-- Begin Navigation -->
-		<nav class="navbar navbar-default col-md-7 col-md-offset-5" role="navigation">
+		<nav class="navbar navbar-default" role="navigation">
 			
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
