@@ -88,6 +88,16 @@ function basetheme_widgets_init()
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	
+	register_sidebar( array(
+		'name' => __( 'Footer Widget Area', 'boilerplate' ),
+		'id' => 'footer-widget-area',
+		'description' => __( 'The footer widget area', 'boilerplate' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'basetheme_widgets_init' );
 

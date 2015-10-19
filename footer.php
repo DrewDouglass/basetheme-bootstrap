@@ -12,6 +12,7 @@
 ?>
 	<footer role="contentinfo" id="site-footer">
 		<?php wp_nav_menu( array( "theme_location" => "footernav", "container" => false, "menu_id" => "footer-nav" ) ); ?>
+		<?php if ( ! dynamic_sidebar( 'footer-widget-area' ) ) : endif; // end footer widget area ?>
 	</footer>
 <?php
 	wp_footer();
