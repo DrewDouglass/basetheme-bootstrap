@@ -1,5 +1,9 @@
 WordPress theme files to build from. Originally based on HTML5 Boilerplate, Boilerplate base theme, Starker's base theme, and others.
 
+Version 1.9.5
+- Added footer widget in addition to sidebar widget area.
+- Fixed loop.php to properly display category per @TimSTL fix.
+
 Version 1.9.4
 - Removed offset and width from header nav.
 - Moved bootstrap.js to footer.
