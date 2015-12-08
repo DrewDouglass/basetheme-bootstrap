@@ -98,6 +98,11 @@ function my_theme_register_required_plugins() {
 			'name'		=> 'Intuitive Custom Post Order',
 			'slug'		=> 'intuitive-custom-post-order',
 			'required'	=> false
+		),
+		array(
+			'name'		=> 'Regenerate Thumbnails',
+			'slug'		=> 'regenerate-thumbnails',
+			'required'  => false 
 		)
 	);
 
