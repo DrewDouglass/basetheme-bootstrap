@@ -361,7 +361,7 @@ if(!function_exists('get_social_url')) {
 		if($network) {
 			$url = get_field($network.'_url', 'option');
 			if($html) {
-				$content = "<a href='".$url."'>$text</a>";
+				$content = "<a target='_blank' href='".$url."'>$text</a>";
 			}
 			else {
 				$content = $url;
