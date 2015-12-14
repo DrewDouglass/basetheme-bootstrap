@@ -76,6 +76,14 @@ function basetheme_setup()
 }
 add_action( 'after_setup_theme', 'basetheme_setup' );
 
+/* Set permalinks on theme setup */
+function set_good_permalinks() {
+    global $wp_rewrite;
+    $wp_rewrite->set_permalink_structure( '/%postname%/' );
+    flush_rewrite_rules();
+}
+add_action( 'after_switch_theme', 'set_good_permalinks' );
+
 /* Register widgetized areas */
 function basetheme_widgets_init() 
 {
