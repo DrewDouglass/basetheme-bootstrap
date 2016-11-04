@@ -84,6 +84,12 @@ function set_good_permalinks() {
 }
 add_action( 'after_switch_theme', 'set_good_permalinks' );
 
+/* Allow SVG Uploads */
+function cc_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+
 /* Register widgetized areas */
 function basetheme_widgets_init() 
 {
