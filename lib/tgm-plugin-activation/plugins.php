@@ -75,16 +75,6 @@ function my_theme_register_required_plugins() {
 			'required' 	=> false		
 		),
 		array(
-			'name' 		=> 'BulletProof Security',
-			'slug' 		=> 'bulletproof-security',
-			'required' 	=> false			
-		),
-		array(
-			'name' 		=> 'Wordfence',
-			'slug' 		=> 'wordfence',
-			'required' 	=> false
-		),
-		array(
 			'name' 		=> 'Simple 301 Redirects',
 			'slug' 		=> 'simple-301-redirects',
 			'required' 	=> false			
@@ -102,6 +92,11 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'		=> 'Regenerate Thumbnails',
 			'slug'		=> 'regenerate-thumbnails',
+			'required'  => false 
+		),
+		array(
+			'name'		=> 'BackUpWordPress',
+			'slug'		=> 'backupwordpress',
 			'required'  => false 
 		)
 	);
