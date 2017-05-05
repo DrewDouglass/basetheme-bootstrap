@@ -46,18 +46,6 @@ function my_theme_register_required_plugins() {
 	$plugins = array(
 		// This is an example of how to include a plugin pre-packaged with a theme
 		array(
-			'name'     				=> 'Gravity Forms (Manual Install Only)', // The plugin name
-			'slug'     				=> 'gravityforms', // The plugin slug (typically the folder name)
-			'source'   				=> 'http://www.gravityhelp.com/downloads/', // The plugin source
-			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-			'external_url' 			=> 'http://www.gravityhelp.com/downloads/', // If set, overrides default API URL and points to an external URL
-		),
-
-		// This is an example of how to include a plugin pre-packaged with a theme
-		array(
 			'name'     				=> 'ACF 5.0 PRO (Manual Install Only)', // The plugin name
 			'slug'     				=> 'advanced-custom-fields-pro', // The plugin slug (typically the folder name)
 			'source'   				=> 'http://www.advancedcustomfields.com/my-account/', // The plugin source
@@ -97,6 +85,16 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'		=> 'BackUpWordPress',
 			'slug'		=> 'backupwordpress',
+			'required'  => false 
+		),
+		array(
+			'name'		=> 'Contact Form 7',
+			'slug'		=> 'contact-form-7',
+			'required'  => false 
+		),
+		array(
+			'name'		=> 'Flamingo',
+			'slug'		=> 'flamingo',
 			'required'  => false 
 		)
 	);
