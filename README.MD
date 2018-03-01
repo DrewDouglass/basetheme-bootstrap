@@ -1,4 +1,4 @@
-# Base Theme by SparkyCode Collect
+# Base Theme by Drew Douglass - SparkyCode LLC
 
 ## Major Updates
 The theme has been updated to reflect recent practices and libraries.
