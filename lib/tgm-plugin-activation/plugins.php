@@ -96,6 +96,11 @@ function my_theme_register_required_plugins() {
 			'name'		=> 'Flamingo',
 			'slug'		=> 'flamingo',
 			'required'  => false 
+		),
+		array(
+			'name'		=> 'UpDraft Plus',
+			'slug'		=> 'updraftplus',
+			'required'  => false 
 		)
 	);
 
