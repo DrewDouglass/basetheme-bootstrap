@@ -3,6 +3,9 @@
 ## Major Updates
 The theme has been updated to reflect recent practices and libraries.
 
+### SVG Support
+SVG uploads now supported by default if recommended plugins are installed.
+
 ### Bootstrap4
 Bootstrap 4 is now included by default. Yay flexbox.
 

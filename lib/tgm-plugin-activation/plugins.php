@@ -101,6 +101,11 @@ function my_theme_register_required_plugins() {
 			'name'		=> 'UpDraft Plus',
 			'slug'		=> 'updraftplus',
 			'required'  => false 
+		),
+		array(
+			'name'		=> 'SVG Support',
+			'slug'		=> 'svg-support',
+			'required'  => false
 		)
 	);
 
