@@ -83,11 +83,6 @@ function my_theme_register_required_plugins() {
 			'required'  => false 
 		),
 		array(
-			'name'		=> 'BackUpWordPress',
-			'slug'		=> 'backupwordpress',
-			'required'  => false 
-		),
-		array(
 			'name'		=> 'Contact Form 7',
 			'slug'		=> 'contact-form-7',
 			'required'  => false 
