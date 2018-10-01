@@ -9,6 +9,9 @@ SVG uploads now supported by default if recommended plugins are installed.
 ### Bootstrap4
 Bootstrap 4 is now included by default. Yay flexbox.
 
+### Simple SSL support
+Now included in recommended plugins list upon theme activation.
+
 ### jQuery 3.x
 Bootstrap uses jQuery 3.x SLIM. This theme does not, it uses the full powered jQuery 3.x library as we've found many external libraries and scripts cannot work with slim.
 
