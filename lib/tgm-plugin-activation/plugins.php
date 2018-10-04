@@ -107,6 +107,11 @@ function my_theme_register_required_plugins()
             'name'		=> 'Really Simple SSL',
             'slug'		=> 'really-simple-ssl',
             'required'  => false
+        ),
+        array(
+            'name'		=> 'WP FIle Manager',
+            'slug'		=> 'wp-file-manager',
+            'required'  => false
         )
     );
 
